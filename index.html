@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Food</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+
+          <h1>Are you Guy Fieri??</h1>
+
+          <form id="quiz">
+            <div class="form-group">
+              <label>What's your favorite food?</label>
+              <select class="form-control" id="question1">
+                <option value="0">Salad</option>
+                <option value="0">Sushi</option>
+                <option value="2">Hamburger and Fries</option>
+                <option value="3">BLOOMIN ONION CHEESEBURGER</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Do you wear sunglasses?</label>
+              <select class="form-control" id="question2">
+                <option value="0">No</option>
+                <option value="1">Only outside</option>
+                <option value="2">Both outside and inside</option>
+                <option value="3">Always, and also on the back of my head</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Where do you wish you were from?</label>
+              <select class="form-control" id="question3">
+                <option value="1">New York City</option>
+                <option value="0">Tokyo</option>
+                <option value="0">Barcelona</option>
+                <option value="3">Flavortown, USA</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>What do you like to wear?</label>
+              <select class="form-control" id="question4">
+                <option value="0">Classy outfit</option>
+                <option value="1">Basic outfit</option>
+                <option value="2">Bathrobe</option>
+                <option value="3">Black shirt with flames running down the side.</option>
+              </select>
+            </div>
+
+            <button id="send" type="submit" class="btn btn-dark">Am I?</button>
+            <button id="retake" class="btn btn-primary" type="reset">Retake quiz</button>
+
+          </form>
+
+          <div>
+            <p id="result"></p>
+            <img src="img/cake.jpg" id="no">
+            <img src="img/almost.jpg" id="maybe">
+            <img src="img/guy.gif" id="yes">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
